@@ -1,0 +1,11 @@
+{
+  "APIUrl": "http://10.0.0.21:3000/",
+  "themes": {
+      "ubuntu": "static/bs3Themes/ubuntu.bs3.css",
+      "darkly": "static/bs3Themes/darkly.bs3.css",
+      "flatly": "static/bs3Themes/flatly.bs3.css",
+      "paper": "static/bs3Themes/paper.bs3.css",
+      "cosmo": "static/bs3Themes/cosmo.bs3.css"
+  },
+  "defaultTheme": "ubuntu"
+}

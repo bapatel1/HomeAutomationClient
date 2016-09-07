@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark navbar-full bg-inverse navbar-fixed-top navbar-xs">
+    <a class="navbar-brand" [routerLink]="['/']">J.A.R.V.I.S</a>
+    <ul class="nav navbar-nav pull-right" style="-webkit-app-region: no-drag;">
+        <li class="nav-item hint--info hint--bottom" data-hint="App Settings" id="toolbar-settings-link">
+            <a [routerLink]="['/settings']" class="nav-link">
+                <i class="fa fa-cog fa-2x"></i>&nbsp;
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div style="padding-top:4%;" class="container-fluid ubuntu">
+    <router-outlet></router-outlet>
+</div>
