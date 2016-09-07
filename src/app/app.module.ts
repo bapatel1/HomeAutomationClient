@@ -10,17 +10,22 @@ import { FormsModule }   from '@angular/forms';
 import { Default } from  './containers/default/default.component';
 import { Settings} from  './containers/settings/settings.component';
 
+import {CollapseModule, CollapseDirective} from 'ng2-bootstrap/ng2-bootstrap';
+import { UiSwitchModule } from 'angular2-ui-switch';
+
 const appRoutes: Routes = [
   { path: "",          component: Default },
   { path: "settings",  component: Settings}
 ];
 
 @NgModule({
-    declarations: [AppComponent, Default],
+    declarations: [AppComponent, Default, Settings],
     imports:      [
       BrowserModule,
       RouterModule.forRoot(appRoutes),
       FormsModule,
+      CollapseModule,
+      UiSwitchModule
     ],
     bootstrap:    [
       AppComponent,

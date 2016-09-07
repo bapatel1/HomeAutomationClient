@@ -1,76 +1,79 @@
 <h2 class=" mdc-text-grey-100">
   <i class="fa fa-tachometer fa-1x mdc-text-cyan-200" aria-hidden="true"></i>
   Dashboard
-  <!-- <button class="button btn btn-warning btn-lg"
+  <button class="button btn btn-warning btn-lg"
         (click)="isCollapsed = !isCollapsed">
         Toggle
-  </button> -->
+  </button>
 </h2>
+<div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">
 
-<div class="row">
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="card mdc-bg-teal-50">
-            <div class="card-block">
-                <p class="card-text">
-                    <!-- http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al -->
-                    <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al"> </iframe>
-                </p>
-                <a href="#" class="btn btn-secondary" (click)="reloadWeather">Refresh</a>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <div class="card mdc-bg-teal-50">
+                <div class="card-block">
+                    <p class="card-text">
+                        <!-- http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al -->
+                        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al"> </iframe>
+                    </p>
+                    <a href="#" class="btn btn-secondary" (click)="reloadWeather">Refresh</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-green-300">
+                <div class="card-block">
+                    <h4 class="card-title">CPU Info</h4>
+                    <p class="card-text">
+                    </p>
+                    <a href="#" class="btn btn-secondary">Refresh</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-orange-300">
+                <div class="card-block">
+                    <h4 class="card-title">Memory Info</h4>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-secondary">Refresh</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-cyan-300">
+                <div class="card-block">
+                    <h4 class="card-title">Disk Usage</h4>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-secondary">Refresh</a>
+                </div>
             </div>
         </div>
 
-    </div>
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-green-300">
-            <div class="card-block">
-                <h4 class="card-title">CPU Info</h4>
-                <p class="card-text">
-                </p>
-                <a href="#" class="btn btn-secondary">Refresh</a>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-deep-orange-300">
+                <div class="card-block">
+                    <h4 class="card-title">Temprature Info</h4>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-secondary">Refresh</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-orange-300">
-            <div class="card-block">
-                <h4 class="card-title">Memory Info</h4>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-secondary">Refresh</a>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-deep-purple-300">
+                <div class="card-block">
+                    <h4 class="card-title">Restart System</h4>
+                    <p class="card-text"></p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-cyan-300">
-            <div class="card-block">
-                <h4 class="card-title">Disk Usage</h4>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-secondary">Refresh</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-deep-orange-300">
-            <div class="card-block">
-                <h4 class="card-title">Temprature Info</h4>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-secondary">Refresh</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-deep-purple-300">
-            <div class="card-block">
-                <h4 class="card-title">Restart System</h4>
-                <p class="card-text"></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-3 col-lg-3">
-        <div class="card mdc-bg-red-400">
-            <div class="card-block">
-                <h4 class="card-title">Shutdown System</h4>
-                <p class="card-text"></p>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="card mdc-bg-red-400">
+                <div class="card-block">
+                    <h4 class="card-title">Shutdown System</h4>
+                    <p class="card-text"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -79,5 +82,5 @@
         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bhavin.ibm%40gmail.com&amp;color=%23AB8B00&amp;src=ghuhb3kni3jo7rm7taemc8b0os%40group.calendar.google.com&amp;color=%23182C57&amp;src=%23contacts%40group.v.calendar.google.com&amp;color=%2329527A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;src=9m72f99o03su42ur41g49s4aog%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FChicago"
             style="border-width:0" width="600" height="600" frameborder="0" scrolling="yes"></iframe>
 </div> -->
-<hr  class=" mdc-text-grey-100"/>
+<hr class=" mdc-text-grey-100" />
 <h2 class=" mdc-text-grey-100"><i class="fa fa-th-list fa-1x mdc-text-lime-200" aria-hidden="true"></i> Control Panel</h2>

@@ -1,12 +1,11 @@
 import {Component, provide, HostListener} from "@angular/core";
-
-
-@Component( {
+@Component({
     selector: "settings",
     providers: [], // make sure to never accidentally put ROUTER_PROVIDERS here or nothing works.
     directives: [],
-    template: require( './settings.view.html' )
+    template: require('./settings.view.html')
 })
-export class Settings{
-  constructor(){}
+export class Settings {
+    constructor() { }
+
 }
