@@ -1,14 +1,12 @@
 <h2 class=" mdc-text-grey-100">
   <i class="fa fa-tachometer fa-1x mdc-text-cyan-200" aria-hidden="true"></i>
   Dashboard
-  <button class="button btn btn-warning btn-lg"
+  <button class="button btn btn-warning btn-md"
         (click)="isCollapsed = !isCollapsed">
         Toggle
   </button>
 </h2>
 <div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">
-
-
     <div class="row">
         <div class="col-xs-12 col-md-4 col-lg-4">
             <div class="card mdc-bg-teal-50">
@@ -50,7 +48,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-deep-orange-300">
                 <div class="card-block">
@@ -84,3 +81,80 @@
 </div> -->
 <hr class=" mdc-text-grey-100" />
 <h2 class=" mdc-text-grey-100"><i class="fa fa-th-list fa-1x mdc-text-lime-200" aria-hidden="true"></i> Control Panel</h2>
+
+<div class="row">
+    <div class="col-xs-12 col-md-4 col-lg-2">
+        <div class="card card-block mdc-text-grey-100 mdc-bg-deep-orange-A700">
+            <h4 class="card-title">Garage Door <span class="tag tag-success">Success</span></h4>
+            <ui-switch size="large" checked></ui-switch>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-2">
+        <div class="card card-block mdc-text-grey-100 mdc-bg-lime-900">
+            <h4 class="card-title">Water Sprinker</h4>
+            <div class="card-text">
+              <div><label>Front Yard - Zone 1</label> <ui-switch color="blue" size="medium" checked></ui-switch></div>
+              <div><label>Front Yard - Zone 2</label> <ui-switch color="red"  size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Back Yard - Zone 1</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Back Yard - Zone 2</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-2">
+        <div class="card card-block mdc-text-grey-100 mdc-bg-cyan-900">
+            <h4 class="card-title">Alarm System</h4>
+            <div class="card-text">
+              <div><label>Front Main Door</label> <ui-switch color="blue" size="medium" checked></ui-switch></div>
+              <div><label>Back Main Door</label> <ui-switch color="red"  size="medium" checked></ui-switch></div>
+              <div><label>Kitchen/Garage Door</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-2">
+        <div class="card card-block mdc-text-grey-100 mdc-bg-purple-A700">
+            <h4 class="card-title">Light Control</h4>
+            <div class="card-text">
+              <div><label>Kitchen - Zone 1</label> <ui-switch color="blue" size="medium" checked></ui-switch></div>
+              <div><label>Kitchen - Zone 2</label> <ui-switch color="red"  size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Office - Zone 1</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Office - Zone 2</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Dining - Zone 1</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Dining - Zone 2</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Living (Lights) - Zone 1</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Living (Lights) - Zone 2</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Living (Fan)</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Temple Room - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <div><label>Aarav Room - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Guest Room - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <div><label>Master Room - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Patio - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <div><label>Patio - Fan</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <hr />
+              <div><label>Porch - Lights</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+              <div><label>Porch - Fan</label> <ui-switch color="orange" size="medium" checked></ui-switch></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-2">
+        <div class="card card-block mdc-text-grey-100 mdc-bg-red-A700">
+            <h4 class="card-title">Speaker System</h4>
+            <div class="card-text">
+              <div><label>Kitchen</label> <ui-switch color="blue" size="medium" checked></ui-switch></div>
+              <div><label>Dining Room</label> <ui-switch color="red"  size="medium" checked></ui-switch></div>
+              <div><label>Living Room</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Temple Room</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Aarav Room</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Guest Room</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+              <div><label>Master Room</label> <ui-switch color="cyan"   size="medium" checked></ui-switch></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import {Component, provide, HostListener} from "@angular/core";
+import {UiSwitchModule} from "angular2-ui-switch";
 
 @Component({
     selector: "default",
@@ -9,7 +10,7 @@ import {Component, provide, HostListener} from "@angular/core";
 export class Default {
     constructor() {
     }
-    public isCollapsed: boolean = false;
+    public isCollapsed: boolean = true;
 
     public collapsed(event: any): void {
         console.log(event);
