@@ -60,7 +60,7 @@ WORKDIR ${appDir}
 # Add our package.json and install *before* adding our application files
 ADD package.json /var/www/app/homeautomation/client
 RUN npm install
-RUN npm install --save-d webpack-dashboard webpack-dev-server
+RUN npm install -g webpack-dev-server
 
 # Install pm2 so we can run our application
 RUN npm i -g pm2 gulp tsd typescript gulp-util
@@ -74,6 +74,10 @@ RUN npm run build
 #Expose the port
 EXPOSE 8088
 
-CMD ["npm", "serve"]
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+
+
+CMD nginx
 
 # voila!

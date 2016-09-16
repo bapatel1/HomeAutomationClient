@@ -2,7 +2,6 @@ var path = require('path');
 var webpack = require('webpack');
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var debug = process.env.NODE_ENV !== "production";
-var DashboardPlugin = require('webpack-dashboard/plugin');
 
 var CopyWebpackPlugin = (CopyWebpackPlugin = require('copy-webpack-plugin'), CopyWebpackPlugin.default || CopyWebpackPlugin);
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -55,7 +54,7 @@ module.exports = {
 
   plugins: debug ? [
       //dev
-      new DashboardPlugin(),
+      //new DashboardPlugin(),
       new CommonsChunkPlugin({ names: ['vendor', 'app', 'polyfills', 'common'], minChunks: Infinity, filename: '[name].js' }),
       new CopyWebpackPlugin([
         { from: './src/static',                   to: 'static' },
