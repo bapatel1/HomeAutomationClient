@@ -60,8 +60,7 @@ WORKDIR ${appDir}
 # Add our package.json and install *before* adding our application files
 ADD package.json /var/www/app/homeautomation/client
 RUN npm install
-RUN npm install webpack-dashboard webpack-dev-server
-#RUN npm i --production
+RUN npm install --save-d webpack-dashboard webpack-dev-server
 
 # Install pm2 so we can run our application
 RUN npm i -g pm2 gulp tsd typescript gulp-util
