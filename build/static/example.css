@@ -1,0 +1,33 @@
+
+body:after {
+}
+.right {
+    position: absolute;
+    right: 0px;
+    padding-right: 5px;
+}
+.top{
+  padding-top: 5px;
+}
+#clock-date {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#clock span {
+  font-size: 16px;
+  position: relative;
+  top: -45px;
+  left: -8px;
+}
+
+#date {
+  font-size: 47px;
+  letter-spacing: 1px;
+  text-align: left;
+}

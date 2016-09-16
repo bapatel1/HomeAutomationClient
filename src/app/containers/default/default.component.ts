@@ -11,7 +11,7 @@ export class Default {
     constructor() {
     }
     public isCollapsed: boolean = true;
-
+    isGarageOpened:boolean = true;
     public collapsed(event: any): void {
         console.log(event);
     }

@@ -1,0 +1,117 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular2-ui-switch",
+        "scope": null,
+        "escapedName": "angular2-ui-switch",
+        "name": "angular2-ui-switch",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\Project\\HomeAutomationProject\\HomeAutomationClient"
+    ]
+  ],
+  "_from": "angular2-ui-switch@latest",
+  "_id": "angular2-ui-switch@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/angular2-ui-switch",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/angular2-ui-switch-1.1.0.tgz_1471574703885_0.09401056333445013"
+  },
+  "_npmUser": {
+    "name": "yuyang041060120",
+    "email": "15950456750@163.com"
+  },
+  "_npmVersion": "3.8.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular2-ui-switch",
+    "scope": null,
+    "escapedName": "angular2-ui-switch",
+    "name": "angular2-ui-switch",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular2-ui-switch/-/angular2-ui-switch-1.1.0.tgz",
+  "_shasum": "6f09b290bbb60ceb07a16abfa5da2f6399bfd260",
+  "_shrinkwrap": null,
+  "_spec": "angular2-ui-switch",
+  "_where": "D:\\Project\\HomeAutomationProject\\HomeAutomationClient",
+  "author": {
+    "name": "yuyangyang"
+  },
+  "bugs": {
+    "url": "https://github.com/yuyang041060120/angular2-ui-switch/issues"
+  },
+  "dependencies": {},
+  "description": "switch button for angular2",
+  "devDependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@types/jasmine": "^2.2.29",
+    "@types/node": "^4.0.29",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.3",
+    "rimraf": "^2.5.4",
+    "rxjs": "5.0.0-beta.6",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.0-beta",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "zone.js": "^0.6.12"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "6f09b290bbb60ceb07a16abfa5da2f6399bfd260",
+    "tarball": "https://registry.npmjs.org/angular2-ui-switch/-/angular2-ui-switch-1.1.0.tgz"
+  },
+  "gitHead": "f2e534556e3ec4687773204c0df32853052132f0",
+  "homepage": "https://github.com/yuyang041060120/angular2-ui-switch#readme",
+  "keywords": [
+    "angular2",
+    "uiswitch",
+    "switch",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "yuyang041060120",
+      "email": "15950456750@163.com"
+    }
+  ],
+  "name": "angular2-ui-switch",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyang041060120/angular2-ui-switch.git"
+  },
+  "scripts": {
+    "build": "npm run tsc",
+    "dev": "webpack-dev-server --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
+    "example": "webpack --config webpack.config.js --inline --progress --profile --colors --display-error-details --display-cached --content-base",
+    "prebuild": "rimraf dist",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --rootDir src --outDir dist --declaration"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "1.1.0"
+}
