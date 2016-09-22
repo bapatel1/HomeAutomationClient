@@ -7,8 +7,8 @@ import { AppComponent }   from './app.component';
 import { Routes, RouterModule }   from '@angular/router';
 import { FormsModule }   from '@angular/forms';
 
-import { Default } from  './containers/default/default.component';
-import { Settings} from  './containers/settings/settings.component';
+import { Default } from  './containers/default/default.container';
+import { Settings} from  './containers/settings/settings.container';
 
 import {CollapseModule, CollapseDirective} from 'ng2-bootstrap/ng2-bootstrap';
 import { UiSwitchModule } from 'angular2-ui-switch';

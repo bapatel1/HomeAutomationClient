@@ -12,10 +12,8 @@
             <div class="card mdc-bg-teal-50">
                 <div class="card-block">
                     <p class="card-text">
-                        <!-- http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al -->
-                        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=33.2595&lon=-87.5212&name=tuscaloosa,al"> </iframe>
+                      <weather></weather>
                     </p>
-                    <a href="#" class="btn btn-secondary" (click)="reloadWeather">Refresh</a>
                 </div>
             </div>
 
@@ -23,53 +21,42 @@
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-green-300">
                 <div class="card-block">
-                    <h4 class="card-title">CPU Info</h4>
-                    <p class="card-text">
-                    </p>
-                    <a href="#" class="btn btn-secondary">Refresh</a>
+                  <cpu></cpu>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-orange-300">
                 <div class="card-block">
-                    <h4 class="card-title">Memory Info</h4>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-secondary">Refresh</a>
+                    <memory></memory>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-cyan-300">
                 <div class="card-block">
-                    <h4 class="card-title">Disk Usage</h4>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-secondary">Refresh</a>
+                    <system></system>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-deep-orange-300">
                 <div class="card-block">
-                    <h4 class="card-title">Temprature Info</h4>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-secondary">Refresh</a>
+                  <cpu-temp></cpu-temp>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-deep-purple-300">
                 <div class="card-block">
-                    <h4 class="card-title">Restart System</h4>
-                    <p class="card-text"></p>
+                  <restart-pi></restart-pi>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-red-400">
                 <div class="card-block">
-                    <h4 class="card-title">Shutdown System</h4>
-                    <p class="card-text"></p>
+                  <shutdown-pi></shutdown-pi>
                 </div>
             </div>
         </div>
