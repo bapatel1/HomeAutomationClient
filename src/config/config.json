@@ -1,5 +1,5 @@
 {
-  "APIUrl": "http://10.0.0.21:3000/",
+  "APIUrl": "http://10.0.0.21:3030/",
   "themes": {
       "ubuntu": "static/bs3Themes/ubuntu.bs3.css",
       "darkly": "static/bs3Themes/darkly.bs3.css",

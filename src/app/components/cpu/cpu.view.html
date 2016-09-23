@@ -1,6 +1,23 @@
 <div>
   <h4 class="card-title">CPU Info</h4>
-  <p class="card-text">
-  </p>
-  <a href="#" class="btn btn-secondary">Refresh</a>
+  <div class="card-text">
+    <div>
+      <span class="font-weight-bold">Manufacturer</span>
+      <span class="pull-xs-right">{{manufacturer}}</span>
+    </div>
+    <div>
+      <span class="font-weight-bold">Brand</span>
+      <span class="pull-xs-right">{{brand}}</span>
+    </div>
+    <div>
+      <span class="font-weight-bold">Speed</span>
+      <span class="pull-xs-right">{{speed}}</span>
+    </div>
+    <div>
+      <span class="font-weight-bold">Core</span>
+      <span class="pull-xs-right">{{cores}}</span>
+    </div>
+  </div>
+  <br />
+  <button class="btn btn-secondary" (click)="refresh()">Refresh</button>
 </div>
