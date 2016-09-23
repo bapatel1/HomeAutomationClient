@@ -11,12 +11,9 @@
         <div class="col-xs-12 col-md-4 col-lg-4">
             <div class="card mdc-bg-teal-50">
                 <div class="card-block">
-                    <p class="card-text">
-                      <weather></weather>
-                    </p>
+                    <weather></weather>
                 </div>
             </div>
-
         </div>
         <div class="col-xs-12 col-md-3 col-lg-3">
             <div class="card mdc-bg-green-300">
@@ -70,171 +67,9 @@
 <h2 class=" mdc-text-grey-100"><i class="fa fa-th-list fa-1x mdc-text-lime-200" aria-hidden="true"></i> Control Panel</h2>
 
 <div class="row">
-    <div class="col-xs-12 col-md-4 col-lg-2">
-        <div class="card card-block mdc-text-grey-100 mdc-bg-deep-orange-A700">
-            <h4 class="card-title">Garage Door <span class="tag tag-success">Success</span></h4>
-            <ui-switch size="large" [checked]=isGarageOpened></ui-switch>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-4 col-lg-2">
-        <div class="card card-block mdc-text-grey-100 mdc-bg-lime-900">
-            <h4 class="card-title">Water Sprinker</h4>
-            <div class="card-text">
-                <div class="top">
-                    <label>Front Yard - Zone 1</label>
-                    <ui-switch class="right" color="blue" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Front Yard - Zone 2</label>
-                    <ui-switch class="right" color="red" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Back Yard - Zone 1</label>
-                    <ui-switch class="right" color="cyan" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Back Yard - Zone 2</label>
-                    <ui-switch class="right" color="orange" size="medium" checked></ui-switch>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-4 col-lg-2">
-        <div class="card card-block mdc-text-grey-100 mdc-bg-cyan-900">
-            <h4 class="card-title">Alarm System</h4>
-            <div class="card-text">
-                <div class="top">
-                    <label>Front Main Door</label>
-                    <ui-switch class="right" color="blue" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Back Main Door</label>
-                    <ui-switch class="right" color="red" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Kitchen/Garage Door</label>
-                    <ui-switch class="right" color="cyan" size="medium" checked></ui-switch>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-4 col-lg-2">
-        <div class="card card-block mdc-text-grey-100 mdc-bg-purple-A700">
-            <h4 class="card-title">Light Control</h4>
-            <div class="card-text">
-                <div class="top">
-                    <label>Kitchen - Zone 1</label>
-                    <ui-switch class="right" color="blue" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Kitchen - Zone 2</label>
-                    <ui-switch class="right" color="red" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Office - Zone 1</label>
-                    <ui-switch class="right" color="cyan" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Office - Zone 2</label>
-                    <ui-switch class="right" color="orange" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Dining - Zone 1</label>
-                    <ui-switch class="right" color="yellow" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Dining - Zone 2</label>
-                    <ui-switch class="right" color="teal" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Living (Lights) - Zone 1</label>
-                    <ui-switch class="right" color="lime" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Living (Lights) - Zone 2</label>
-                    <ui-switch class="right" color="green" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Living (Fan)</label>
-                    <ui-switch class="right" color="brown" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Temple Room - Lights</label>
-                    <ui-switch class="right" color="indigo" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Aarav Room - Lights</label>
-                    <ui-switch class="right" color="grey" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Guest Room - Lights</label>
-                    <ui-switch class="right" color="#18FFFF" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Master Room - Lights</label>
-                    <ui-switch class="right" color="#76FF03" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Patio - Lights</label>
-                    <ui-switch class="right" color="#FFD600" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Patio - Fan</label>
-                    <ui-switch class="right" color="#3F51B5" size="medium" checked></ui-switch>
-                </div>
-                <hr />
-                <div class="top">
-                    <label>Porch - Lights</label>
-                    <ui-switch class="right" color="#C51162" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Porch - Fan</label>
-                    <ui-switch class="right" color="#0091EA" size="medium" checked></ui-switch>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-4 col-lg-2">
-        <div class="card card-block mdc-text-grey-100 mdc-bg-red-A700">
-            <h4 class="card-title">Speaker System</h4>
-            <div class="card-text">
-                <div class="top">
-                    <label>Kitchen</label>
-                    <ui-switch class="right" color="#01579B" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Dining Room</label>
-                    <ui-switch class="right" color="#FF9800" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Living Room</label>
-                    <ui-switch class="right" color="#CDDC39" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Temple Room</label>
-                    <ui-switch class="right" color="#FFD740" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Aarav Room</label>
-                    <ui-switch class="right" color="#8E24AA" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Guest Room</label>
-                    <ui-switch class="right" color="#00897B" size="medium" checked></ui-switch>
-                </div>
-                <div class="top">
-                    <label>Master Room</label>
-                    <ui-switch class="right" color="#304FFE" size="medium" checked></ui-switch>
-                </div>
-            </div>
-        </div>
-    </div>
+    <garage></garage>
+    <sprinkler></sprinkler>
+    <security-alarm></security-alarm>
+    <lights></lights>
+    <speakers></speakers>
 </div>
