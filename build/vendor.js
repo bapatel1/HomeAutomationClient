@@ -1,4 +1,4 @@
-webpackJsonp([2,3],[
+webpackJsonp([3,4],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -11,7 +11,7 @@ webpackJsonp([2,3],[
 	__webpack_require__(338);
 	__webpack_require__(361);
 	// RxJS
-	__webpack_require__(467);
+	__webpack_require__(468);
 	// Other vendors for example jQuery, Lodash or Bootstrap
 	// You can import js, ts, css, sass, ...
 

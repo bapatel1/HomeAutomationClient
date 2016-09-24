@@ -13,7 +13,8 @@ module.exports = {
   entry: {
     'polyfills': './src/app/polyfills',
     'app': './src/app/boot',
-    'vendor': './src/app/vendor'
+    'vendor': './src/app/vendor',
+    'config': './src/app/config'
   },
 
   output: {
