@@ -9,6 +9,9 @@
     "removeComments": false,
     "noImplicitAny": false
   },
+  "filesGlob": [
+    "**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "node_modules/ng2-bootstrap",

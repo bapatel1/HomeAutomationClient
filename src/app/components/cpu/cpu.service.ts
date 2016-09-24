@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import { Http, Headers, RequestOptions } from "@angular/http";
 import {CPUData} from './cpu.mock';
-import {Config} from '../../Config';
+import {Config} from '../../config';
 
 @Injectable()
 export class CPUService {
