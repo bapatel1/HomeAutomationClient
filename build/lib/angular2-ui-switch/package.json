@@ -1,8 +1,16 @@
 {
   "_args": [
     [
-      "angular2-ui-switch@^1.1.0",
-      "E:\\Bhavin-PC\\Projects\\HomeAutomationClient"
+      {
+        "raw": "angular2-ui-switch@^1.1.0",
+        "scope": null,
+        "escapedName": "angular2-ui-switch",
+        "name": "angular2-ui-switch",
+        "rawSpec": "^1.1.0",
+        "spec": ">=1.1.0 <2.0.0",
+        "type": "range"
+      },
+      "C:\\projects\\HomeAutomationClient"
     ]
   ],
   "_from": "angular2-ui-switch@>=1.1.0 <2.0.0",
@@ -16,16 +24,17 @@
     "tmp": "tmp/angular2-ui-switch-1.1.0.tgz_1471574703885_0.09401056333445013"
   },
   "_npmUser": {
-    "email": "15950456750@163.com",
-    "name": "yuyang041060120"
+    "name": "yuyang041060120",
+    "email": "15950456750@163.com"
   },
   "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "angular2-ui-switch",
     "raw": "angular2-ui-switch@^1.1.0",
-    "rawSpec": "^1.1.0",
     "scope": null,
+    "escapedName": "angular2-ui-switch",
+    "name": "angular2-ui-switch",
+    "rawSpec": "^1.1.0",
     "spec": ">=1.1.0 <2.0.0",
     "type": "range"
   },
@@ -36,7 +45,7 @@
   "_shasum": "6f09b290bbb60ceb07a16abfa5da2f6399bfd260",
   "_shrinkwrap": null,
   "_spec": "angular2-ui-switch@^1.1.0",
-  "_where": "E:\\Bhavin-PC\\Projects\\HomeAutomationClient",
+  "_where": "C:\\projects\\HomeAutomationClient",
   "author": {
     "name": "yuyangyang"
   },
@@ -82,8 +91,8 @@
   "main": "dist/index.js",
   "maintainers": [
     {
-      "email": "15950456750@163.com",
-      "name": "yuyang041060120"
+      "name": "yuyang041060120",
+      "email": "15950456750@163.com"
     }
   ],
   "name": "angular2-ui-switch",

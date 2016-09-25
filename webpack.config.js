@@ -11,10 +11,10 @@ module.exports = {
   debug: debug ? true : false,
   devtool: debug ? "inline-sourcemap" : null,
   entry: {
-    'polyfills': './src/app/polyfills',
-    'app': './src/app/boot',
-    'vendor': './src/app/vendor',
-    'appconfig': './src/app/appconfig'
+    'polyfills': ['./src/app/polyfills'],
+    'app': ['./src/app/boot'],
+    'vendor': ['./src/app/vendor'],
+    'appconfig': ['./src/app/appconfig']
   },
 
   output: {
