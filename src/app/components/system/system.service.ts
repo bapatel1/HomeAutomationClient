@@ -1,13 +1,13 @@
 import {Injectable} from '@angular/core';
 import { Http, Headers, RequestOptions } from "@angular/http";
 import {SystemData} from './system.mock';
-import {Config} from '../../Config';
+import {AppConfig} from '../../appconfig';
 
 @Injectable()
 export class SystemService {
     apiUrl: string;
 
-    constructor(private http: Http, private config:Config) {
+    constructor(private http: Http, private config: AppConfig) {
 
     }
 

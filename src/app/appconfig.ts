@@ -4,14 +4,14 @@ import 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
-export class Config {
+export class AppConfig {
 
     private _copyright: string
     public static configStream: Observable<any>;
 
     constructor(private http: Http) {
-        if(!Config.configStream){
-            Config.configStream = this.http.get("config/config.json")
+        if(!AppConfig.configStream){
+            AppConfig.configStream = this.http.get("config/config.json")
                 .map(res => res.json())
                 //.share();
                 .publishReplay(1)
@@ -20,7 +20,7 @@ export class Config {
     }
     load() {
         return new Promise((resolve, reject) => {
-            Config.configStream
+            AppConfig.configStream
                 .subscribe((data) => {
                     resolve(data);
                 });

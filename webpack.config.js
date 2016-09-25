@@ -14,7 +14,7 @@ module.exports = {
     'polyfills': './src/app/polyfills',
     'app': './src/app/boot',
     'vendor': './src/app/vendor',
-    'config': './src/app/config'
+    'appconfig': './src/app/appconfig'
   },
 
   output: {

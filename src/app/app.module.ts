@@ -12,7 +12,7 @@ import { Settings} from  './containers/settings/settings.container';
 
 import {CollapseModule, CollapseDirective} from 'ng2-bootstrap/ng2-bootstrap';
 import { UiSwitchModule } from 'angular2-ui-switch';
-import {Config} from './Config';
+import {AppConfig} from './appconfig';
 
 const appRoutes: Routes = [
   { path: "",          component: Default },
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
       [provide(LocationStrategy, { useClass: HashLocationStrategy })],
       //FORM_PROVIDERS, // todo: FormsModule ???
       HTTP_PROVIDERS,
-      Config
+      AppConfig
     ]
 })
 export class AppModule {}

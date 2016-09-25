@@ -1,7 +1,7 @@
 import { Injectable, Inject, EventEmitter } from '@angular/core';
 //import { Router } from '@angular/router';
 import { Http } from "@angular/http";
-import { Config } from '../config';
+import { AppConfig } from '../appconfig';
 //import { PouchDB } from 'pouchdb';
 import { Subject, ReplaySubject } from 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
@@ -26,7 +26,7 @@ export class ThemeService {
 
     constructor(
         private http: Http,
-        private config: Config ) {
+        private config: AppConfig ) {
 
         try {
             ThemeService.currentTheme = localStorage.getItem( STORAGE_CURRENT_THEME );
