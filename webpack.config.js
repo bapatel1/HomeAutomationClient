@@ -74,7 +74,7 @@ module.exports = {
 
   ] : [
       //prod
-      new CommonsChunkPlugin({ names: ['vendor', 'app', 'polyfills', 'common'], minChunks: Infinity, filename: '[name].js' }),
+      new CommonsChunkPlugin({ names: ['vendor', 'app', 'polyfills', 'common', 'appconfig'], minChunks: Infinity, filename: '[name].js' }),
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.OccurenceOrderPlugin(),
       new webpack.optimize.UglifyJsPlugin({mangle:false, sourcemap:false})
