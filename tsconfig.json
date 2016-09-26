@@ -50,6 +50,7 @@
     "src/app/components/cputemp/cputemp.mock.ts",
     "src/app/components/cputemp/cputemp.service.ts",
     "src/app/components/garage/garage.component.ts",
+    "src/app/components/garage/garage.service.ts",
     "src/app/components/lights/lights.component.ts",
     "src/app/components/memory/memory.component.ts",
     "src/app/components/memory/memory.mock.ts",
