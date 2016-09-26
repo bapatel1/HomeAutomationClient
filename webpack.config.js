@@ -11,9 +11,10 @@ module.exports = {
   debug: debug ? true : false,
   devtool: debug ? "inline-sourcemap" : null,
   entry: {
-    'polyfills': './src/app/polyfills',
-    'app': './src/app/boot',
-    'vendor': './src/app/vendor'
+    'polyfills': ['./src/app/polyfills'],
+    'app': ['./src/app/boot'],
+    'vendor': ['./src/app/vendor'],
+    'appconfig': ['./src/app/appconfig']
   },
 
   output: {
@@ -73,7 +74,7 @@ module.exports = {
 
   ] : [
       //prod
-      new CommonsChunkPlugin({ names: ['vendor', 'app', 'polyfills', 'common'], minChunks: Infinity, filename: '[name].js' }),
+      new CommonsChunkPlugin({ names: ['vendor', 'app', 'polyfills', 'common', 'appconfig'], minChunks: Infinity, filename: '[name].js' }),
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.OccurenceOrderPlugin(),
       new webpack.optimize.UglifyJsPlugin({mangle:false, sourcemap:false})
