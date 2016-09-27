@@ -1,5 +1,5 @@
 
-# Angular 2 rc.5 boilerplate project (with Webpack and Typescript)
+# Angular 2 rc.5 Client for Homeautomation project (with Webpack and Typescript)
 
 A project containing all the basic requirements for a single page application using Angular, written in Typescript, and packaged with Webpack.
 
